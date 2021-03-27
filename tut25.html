@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More on CSS selectors</title>
+  <style>
+   h1 {
+     color: blue;
+     text-align: center;
+     background-color:rgb(97, 51, 51);
+     font-weight: bold;
+   }
+
+ /* p is right inside div */
+   /* div >p {
+     color: blueviolet;
+     font-weight: bold;
+   } */
+
+ /* p is right next to div */
+   /* div + p {
+     color: wheat;
+     background-color: blueviolet;
+   } */
+  </style>
+</head>
+<body>
+   <h1>This is more on selectors</h1>
+   <div class="cont">
+     <div class="row">
+       <ul>
+         <li class="item"><p>paragraph inside li</p></li>
+         <li class="item">paragraph inside li</li>
+         
+       </ul>
+       <p>this is paragraph</p>
+     </div>
+     <p>this is another paragraph</p>
+   </div>
+   <p>outermost paragraph</p>
+</body>
+</html>

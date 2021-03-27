@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <style>
+     .container {
+       display: flex;  /*flexible*/
+       height: 344px;
+       width :100%;
+       margin: auto;
+       border: 3px solid blue;
+       
+  /* flex properties in flex container */     
+      
+       /* flex-direction: row-reverse; /*row is default*/
+       /* flex-direction: column-reverse; column  */
+       /* flex-wrap: wrap; */
+       /* flex-flow: row-reverse wrap; */
+
+    /* justify : works in horizontal dirn */   
+        /* justify-content: center;
+        justify-content: space-between;
+        justify-content: space-evenly;
+        justify-content: space-around; */
+
+    /* align : works in vertical dirn */  
+        /* align-items: center;
+        align-items: flex-end;
+        align-items: baseline;
+        align-items: flex-start;
+        align-items: stretch; */
+     }
+     .item {
+       width: 100px; height: 100px;
+       background-color: rgb(233, 178, 168);
+       border: 3px solid rgb(13, 94, 40);
+       margin: 2px;
+     }
+     #item1 {
+       /* order: 1; */
+       /* flex-grow: 1; */
+       flex-basis: 150px;
+     }
+     #item2 {
+       /* flex-shrink: 2; */
+     }
+     #item3 {
+         flex: 3 3 200px;
+         align-self: center;
+     }
+  </style>
+</head>
+<body>
+  <h1>This is Flexbox Tutorial.</h1>
+  <div class="container">
+      <div class="item" id="item1">1st Box</div>
+      <div class="item" id="item2">2nd Box</div>
+      <div class="item" id="item3">3rd Box</div>
+      <!-- <div class="item" id="item4">4th Box</div>
+      <div class="item" id="item5">5th Box</div>
+      <div class="item" id="item6">6th Box</div> -->
+  </div>
+</body>
+</html>
