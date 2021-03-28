@@ -91,7 +91,7 @@
   
 }
 #home h1 {
-  color: rgb(1, 1, 14);
+  color: white;
   text-align: center;
   font-size: 3rem;
   z-index: 2;
@@ -127,7 +127,7 @@
    justify-content: space-evenly;
    padding: 30px;
    flex-wrap: wrap;
-   background-color: rgb(224, 223, 221);
+   background-color: rgb(17, 17, 15);
    height: 50%;
   }
 .container ul {
@@ -162,7 +162,7 @@
 }
 
 #lec ,#tut , #mycloud {
-  color: rgb(141, 82, 27);
+  color: rgb(221, 171, 124);
    margin-top: -8px;
    margin-bottom: 8px;
 }
