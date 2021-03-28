@@ -1,0 +1,174 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* css variables */
+
+/* navigation bar  */
+#navbar{
+  display: flex;
+  align-items: center;
+}
+
+/* logo and image  */
+#logo img{
+   margin: 8px 28px;
+   height: 45px;
+   width: 45px;
+   border-radius: 30px;
+}
+#logo div {
+  margin-left: 18px;
+  margin-top: -15px;
+  color: white;
+  font-size: 0.8rem;
+  padding: 2px;
+}
+/* list style */
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+#navbar {
+  position: relative;
+ 
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+#navbar ul li {
+   font-size: 1.1rem;
+   
+}
+#navbar ul li a {
+  color: whitesmoke;
+   display: block;
+   padding: 2px 12px;
+   text-decoration: none;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: bold;
+   
+
+}
+#navbar ul li a:hover {
+  color: rgb(26, 5, 5);
+  background-color: wheat;
+  border-radius: 12px;
+   display: block;
+   padding: 2px 12px;
+   text-decoration: none;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 1.2rem;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-content: center; 
+  border: 2px solid  rgb(212, 162, 162);
+  border-left: none;
+  border-right: none;
+ 
+}
+#home::before{
+  content: "";
+  background: url('../img/bg.jpg');
+  position: absolute;
+  top: -225px;
+  height: 80%;
+  width: 100%;
+  z-index: -2;
+  
+  
+}
+#home h1 {
+  color: rgb(247, 247, 248);
+  text-align: center;
+  font-size: 3rem;
+  z-index: 2;
+ 
+
+}
+#home h2 {
+  color: rgb(63, 209, 136);
+  text-align: center;
+  font-size: 2.5rem;
+  z-index: 2;
+  margin-top: 40px;
+  
+
+}
+#home h3 {
+  color: rgb(24, 20, 2);
+  text-align: center;
+  font-size: 1.5rem;
+  z-index: 2;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  
+
+}
+.primary {
+  font-size: 2rem;
+  padding: 12px;
+}
+.container {
+  display: flex;
+  margin: auto;
+   justify-content: space-evenly;
+   padding: 30px;
+   flex-wrap: wrap;
+   background-color: rgb(224, 223, 221);
+   height: 50%;
+  }
+.container ul {
+  list-style: none;
+  border: 12px solid rgb(128, 10, 10);
+  border-radius: 40px;
+  background-color: rgb(159, 154, 163);
+  padding: 30px; 
+}
+.container div {
+  padding: 20px;
+}
+.container div li a {
+  padding: 8px;
+  border: 2px solid black;
+
+  
+}
+.l ul li a {
+  color: black;
+  padding: 2px; 
+  display: block;
+  text-decoration: none;
+  margin: 4px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgb(203, 214, 214);
+}
+.l ul li a:hover {
+  color: rgb(229, 234, 238);
+  background-color: rgb(12, 12, 44);
+}
+
+#lec ,#tut , #mycloud {
+  color: rgb(141, 82, 27);
+   margin-top: -8px;
+   margin-bottom: 8px;
+}
+footer {
+  height: 6px;
+ text-align: end;
+ margin-right: 10px;
+ font-size: 1.2rem;
+}
