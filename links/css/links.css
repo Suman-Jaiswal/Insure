@@ -10,6 +10,9 @@
 #navbar{
   display: flex;
   align-items: center;
+  position: sticky;
+  top: 0.1px;
+  z-index: 2;
 }
 
 /* logo and image  */
@@ -31,12 +34,7 @@
   display: flex;
   list-style: none;
 }
-#navbar {
-  position: sticky;
-  top: 1px;
-  z-index: 2;
- 
-}
+
 #navbar::before {
   content: "";
   background: url('../img/bg.jpg');
