@@ -19,12 +19,14 @@ nav {
 .navlinks {
   display: flex;
   justify-content: space-around;
-  width: 30%;
+  width: 35%;
+  margin-right: -90px;
   
 }
 
 .navlinks li {
   list-style: none;
+  width: 80;
 }
 .navlinks li a {
   color: rgb(148, 141, 141);
@@ -32,7 +34,7 @@ nav {
   font-size: 13px;
   font-family: 'Karla', sans-serif;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   padding: 2px; 
 }
 .navlinks li a:hover {
@@ -73,9 +75,13 @@ nav {
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
-  background-color:  hsl(270, 9%, 17%);
+   background-color:  hsl(270, 9%, 17%);
   
 }
+#home .photo2 img {
+  display: none;
+ }
+
 #home .heading{
   display: flex;
   flex-direction: column;
@@ -83,20 +89,20 @@ nav {
 }
 #home .photo img{
 
- 
-  padding-top: 50px;
-  margin-top: 0px;
-  height: 500px;
+ margin-top: 50px;
+  padding-top: 0px;
+  height: 450px;
   max-width: 100%;
+  padding-bottom: -50px;
+  margin-bottom: -120px;
 
   
 }
 .heading h1 {
   font-family: 'DM Serif Display', serif;
-  font-size: 60px;
+  font-size: 50px;
   color: white;
   font-weight: lighter;
-  /* padding: 10px; */
 }
 .heading p {
   font-family: 'DM Serif Display', serif;
@@ -355,15 +361,50 @@ nav {
    display: block;
    overflow-x: hidden;
  }
+ #home {
+   flex-direction: column-reverse;
+   height: 800px;
+ }
+ #home .heading {
+   font-size: 10px;
+   padding: 20px;
+   text-align: center;
+   height: auto
+   
+ }
+ #home .heading .hprimary {
+  font-size: 40px;
+  padding: 5px;
+   
+ }
+ #home .heading {
+   font-size: 15px;
+   padding: 20px;
+   text-align: center;
+   
+ }
+ #home .btn {
+   font-size: 10px;
+   padding: 15px;
+   width: 60%;
+  align-self: center;
+  font-size: 15px;
+   
+ }
  #home .photo img {
   display: none;
  }
+ #home .photo2 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  
+ }
  
- #body .b1 {
-  padding-top: 80px;
-  font-family: 'DM Serif Display', serif;
-  font-size: 30px;
+
+.b1 h1 {
   text-align: center;
+  width: 100%;
 }
  .b2  {
    width: 100%;
@@ -376,12 +417,19 @@ nav {
    justify-content: center;
    text-align: center;
  }
-
+ .container {
+   flex-direction: column;
+   height: auto;
+   width: 90%;
+ }
  .container h1 {
-   font-size: 25px;
+   font-size: 40px;
+   text-align: center;
+   padding: 20px;
  }
  .container .bt {
-   padding-right: 5px;
+   padding: 20px;
+   margin-bottom: 20px;
   
  }
 .foot {
