@@ -264,7 +264,7 @@ nav {
  
   width: 20%;
   height: 200px;
-  padding: 20px;
+  padding: 10px;
   color: rgb(117, 113, 113);
   font-family: 'DM Serif Display', serif;
   font-family: 'Karla', sans-serif;
@@ -273,28 +273,22 @@ nav {
   text-align: center;
  
 }
-.foot .cont ul {
-  color: black;
-  text-decoration: none;
-  list-style: none;
- 
-}
+
 .foot .cont ul li{
   color: black;
   text-decoration: none;
   list-style: none;
-  padding-top: 10px;
+  padding: 10px;
+  
 }
-.foot .cont a {
+.foot .cont  a {
   color: black;
   text-decoration: none;
-  
   font-size: 12px;
 }
-.foot .cont a:hover {
+.foot  a:hover {
   color: black;
   text-decoration: none;
-  padding-top: 80px;
   font-size: 12px;
   text-decoration: underline;
 }
@@ -443,6 +437,9 @@ nav {
   flex-direction: column;
   width: 100%;
   text-align: center;
+}
+.foot .cont li {
+font-size: 5px;
 }
 
 }
