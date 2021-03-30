@@ -77,7 +77,7 @@ nav {
     display: flex;
     flex-direction: column;
    position: absolute;
-   height: 100vh;
+   height: 50%;
    width: 100%;
    top: 8vh;
    background-color:   hsl(273, 4%, 51%);
