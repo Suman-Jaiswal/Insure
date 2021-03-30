@@ -14,9 +14,7 @@ nav {
   min-height: 8vh;
   background-color: white;
   border: 1px solid rgb(209, 190, 190);
-  
-  
-  
+    
 }
 
 /* nav ul {
@@ -59,9 +57,19 @@ nav {
 .burger {
   display: none;
 }
+.design1 {
+  display: none;
+}
+@media screen and (max-width: 1400px) {
+  .navlinks {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    
+  }
+}
 
-
-@media screen and (max-width : 1200px){
+@media screen and (max-width : 800px){
 
  body {
    overflow-x: hidden;
@@ -77,24 +85,46 @@ nav {
     display: flex;
     flex-direction: column;
    position: absolute;
-   height: 50%;
+   height: 90%;
    width: 100%;
    top: 8vh;
-   background-color:   hsl(273, 4%, 51%);
+   background-color: hsl(23, 37%, 11%);
    align-items: center;
+ 
    transform: translateX(100%);
    transition: transform 0.5s ease-in;
+
      
  }
  .navlinks li {
    opacity: 0;
+ 
+
+ }
+ .navlinks li a {
+   color: white;
+   font-size: 20px;
+
+ }
+ #vplan1 a {
+   color: white;
+   font-size: 20px;
+   border-color: white;
+  
 
  }
  .burger {
    display: block;
    cursor: pointer;
  }
-
+ .design1 {
+   display: block;
+   position: relative;
+   z-index: 2;
+   width: 100%;
+   height: 50%;
+   overflow-x: hidden;
+ }
 }
 .nav-active {
   transform: translateX(0%);
