@@ -17,11 +17,6 @@ nav {
     
 }
 
-/* nav ul {
-  margin-right: -100px;
-  align-content: center;
-  
-} */
 .navlinks {
   display: flex;
   justify-content: space-around;
@@ -56,7 +51,16 @@ nav {
 }
 .burger {
   display: none;
+  border: 1.5px solid black;
 }
+.burger div {
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  margin: 4px;
+  transition: all 0.3s ease;
+}
+
 .design1 {
   display: none;
 }
@@ -67,6 +71,7 @@ nav {
     width: 50%;
     
   }
+ 
 }
 
 @media screen and (max-width : 800px){
@@ -117,8 +122,9 @@ nav {
  }
  .burger {
    display: block;
-   cursor: pointer;
  }
+
+
  .design1 {
    display: block;
    position: relative;
@@ -143,4 +149,17 @@ nav {
     transform: translateX(0px);
   }
 }
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px,5.5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px,-5.5px);
+}
+
+
+
 /* -----------------home-------------------- */
