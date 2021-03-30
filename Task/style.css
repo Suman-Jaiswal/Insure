@@ -154,51 +154,22 @@ nav {
   text-align: center;
   width: 40%;
 }
-/* .b2 .c {
-  width: 20%;
-  height: 200px;
-  flex-wrap: wrap;
-} */
 
-/* #body .b2 .c {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 20%;
-  width: 20%;
-  font-family: 'DM Serif Display', serif;
-  
-  /* } --------------------------------------- 
-  /* #body .b2 .c img{
-    height: 50px;
-    width: 50px;
-    
-  }
-  #body .b2 .c p {
-    font-family: 'DM Serif Display', serif;
-    font-family: 'Karla', sans-serif;
-    padding-bottom: 20px;
-    
-  } */
   .b2  {
-    border: 2px solid red;
    display: flex;
    margin: auto;
     width: 100%;
    justify-content: space-evenly;
    padding-top: 50px;
    padding-bottom: 50px;
-  
   }
 
-.b2 .c {
-  border: 2px solid red;
+  .b2 .c {
   width: 20%;
   justify-content: space-evenly;
- padding: 23px;
-
-}
-.b2 .c img {
+  padding: 23px;
+  }
+ .b2 .c img {
   padding: 3px;
 }
 .b2 .c  .bold {
