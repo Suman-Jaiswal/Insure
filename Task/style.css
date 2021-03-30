@@ -187,7 +187,7 @@ nav {
   padding: 10px 0px;
   font-family: 'DM Serif Display', serif;
   font-family: 'Karla', sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   color: rgb(112, 110, 110);
   
 
@@ -242,13 +242,28 @@ nav {
   justify-content: space-around;
  margin-top: 70px;
  background-color: hsl(0, 5%, 82%);
- padding: 40px;
+ padding: 20px;
  flex-wrap: wrap;
+ border-bottom: 2px solid rgb(80, 61, 61);
+ border-width: 60%;
 
 }
-.fhead img {
+
+.fhead  img  {
  cursor: pointer;
+ padding-left: 6px;
+ padding-right: 6px;
 }
+
+
+
+/* .fhead   img  :hover{ -----------------------------------------------------> Incomplete
+                         -----------------------------------------------------> Incomplete
+                         -----------------------------------------------------> Incomplete                       
+}                      -----------------------------------------------------> Incomplete */
+
+
+
 .foot {
   display: flex;
   margin: auto;
