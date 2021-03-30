@@ -91,7 +91,7 @@ nav {
     display: flex;
     flex-direction: column;
    position: absolute;
-   height: 90%;
+   height: 92vh;
    width: 100%;
    top: 8vh;
    background-color: hsl(23, 37%, 11%);
@@ -103,7 +103,7 @@ nav {
  
  .navlinks li {
    opacity: 0;
-   padding-top: 50px;
+   padding-top: 10px;
  
 
  }
