@@ -143,25 +143,24 @@ nav {
   
 }
 #body .b1 {
-  margin-left: 180px;
-  padding-top: 80px;
+  display: flex;
+  padding-top: 60px;
+ ;
   font-family: 'DM Serif Display', serif;
   font-size: 30px;
 
 }
-#body .b2  {
-  display: flex;
-  margin: auto;
-  justify-content: space-evenly;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  width: 95%;
-  
-
-
+.b1 h1 {
+  text-align: center;
+  width: 40%;
 }
+/* .b2 .c {
+  width: 20%;
+  height: 200px;
+  flex-wrap: wrap;
+} */
 
-#body .b2 .c {
+/* #body .b2 .c {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -169,26 +168,65 @@ nav {
   width: 20%;
   font-family: 'DM Serif Display', serif;
   
-}
-#body .b2 .c img{
-  height: 50px;
-  width: 50px;
+  /* } --------------------------------------- 
+  /* #body .b2 .c img{
+    height: 50px;
+    width: 50px;
+    
+  }
+  #body .b2 .c p {
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Karla', sans-serif;
+    padding-bottom: 20px;
+    
+  } */
+  .b2  {
+    border: 2px solid red;
+   display: flex;
+   margin: auto;
+    width: 100%;
+   justify-content: space-evenly;
+   padding-top: 50px;
+   padding-bottom: 50px;
   
+  }
+
+.b2 .c {
+  border: 2px solid red;
+  width: 20%;
+  justify-content: space-evenly;
+ padding: 23px;
+
 }
-#body .b2 .c p {
+.b2 .c img {
+  padding: 3px;
+}
+.b2 .c  .bold {
+  padding: 10px 0px;
+  font-family: 'DM Serif Display', serif;
+
+}
+.b2 .c  .content {
+  padding: 10px 0px;
   font-family: 'DM Serif Display', serif;
   font-family: 'Karla', sans-serif;
-  padding-bottom: 20px;
+  font-size: 12px;
+  color: rgb(112, 110, 110);
   
+
 }
+
+/* ------------------------------------container------------------------------ */
 .container {
   display: flex;
   justify-content: space-evenly;
   background-color:  hsl(270, 9%, 17%);
-  width: 75%;
+  width: 80%;
   margin: auto;
+
   
-}
+} 
+
 .container  h1 {
   font-family: 'DM Serif Display', serif;
   font-size: 50px;
@@ -225,9 +263,9 @@ nav {
 .fhead {
   display: flex;
   justify-content: space-around;
- margin-top: 50px;
+ margin-top: 70px;
  background-color: hsl(0, 5%, 82%);
- padding: 20px;
+ padding: 40px;
  flex-wrap: wrap;
 
 }
@@ -255,6 +293,7 @@ nav {
   font-family: 'Karla', sans-serif;
   font-weight: bold;
   font-size: 16px;
+  text-align: center;
  
 }
 .foot .cont ul {
@@ -355,7 +394,17 @@ nav {
   font-size: 30px;
   text-align: center;
 }
-
+ .b2  {
+   width: 100%;
+   flex-direction: column;
+   margin: auto;
+ }
+ .b2 .c {
+   width: 80%;
+   margin: auto;
+   justify-content: center;
+   text-align: center;
+ }
 
  .container h1 {
    font-size: 25px;
