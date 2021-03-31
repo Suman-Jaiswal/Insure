@@ -304,10 +304,10 @@ body {
   overflow-x: hidden;
 }
 
-/* ---------------------------------media-query---------------------------------- */
+/* ---------------------------------media-query-----tab----------------------------- */
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) { 
   .navlinks {
     display: flex;
     justify-content: space-around;
@@ -338,26 +338,35 @@ body {
 }
 
 
+/* -------------------------------------media-query---------phone------------------------- */
+
 @media screen and (max-width : 767px){
 
   body {
-    overflow-x: hidden;
-  }
-  .navlinks {
-   position: absolute;
+    overflow-inline: hidden;
    
-   right: 0%;
-   height: 92vh;
-   top: 8vh;
+  }
+
+    .navlinks {
+   position: absolute;
    overflow-x: hidden;
+   right: 0%;
+   left: 0%;
+   height: 100%;
+   top: 8vh;
    background-color: hsl(23, 37%, 11%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+   display: none;
+   flex-direction: column;
    width: 100%;
-   transform: translateX(100%);
-   transition: transform 0.4s ease-in;    
- }
+    transform: translatey(100%); 
+    transition: transform 0.4s ease-in;  
+    overflow-x: hidden;  
+    
+ }  
+ .nav-active {
+  transform: translateX(0%);
+  display: flex;
+}
  
  .navlinks li {
    opacity: 0;
@@ -389,6 +398,8 @@ body {
  #home {
    flex-direction: column-reverse;
    height: 400px;
+   
+
  }
  #home .heading {
    font-size: 10px;
@@ -474,9 +485,7 @@ font-size: 5px;
 }
 
 }
-.nav-active {
-  transform: translateX(0%);
-}
+
 
 @keyframes navLinkFade {
   from {
