@@ -307,7 +307,7 @@ body {
 /* ---------------------------------media-query---------------------------------- */
 
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
   .navlinks {
     display: flex;
     justify-content: space-around;
@@ -336,6 +336,7 @@ body {
        
      }
 }
+
 
 @media screen and (max-width : 767px){
 
