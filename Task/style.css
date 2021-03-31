@@ -78,7 +78,7 @@ nav {
    background-color:  hsl(270, 9%, 17%);
   
 }
-#home .photo2 img {
+ .photo2 img {
   display: none;
  }
 
@@ -128,14 +128,7 @@ nav {
  color: black;
  font-weight: 400;
 }
-/* #home::before {
-  content: "";
- background-color:  hsl(270, 9%, 17%);
- position: absolute;
- height: 55%;
- width: 100%;
- z-index: -1;
-} */
+
 
 /* -------------------------------------------------------------------------------/ */
 
@@ -249,7 +242,7 @@ nav {
 
 }
 
-.fhead  img  {
+.fhead  a  {
  cursor: pointer;
  padding-left: 6px;
  padding-right: 6px;
@@ -257,10 +250,9 @@ nav {
 
 
 
-/* .fhead   img  :hover{ -----------------------------------------------------> Incomplete
-                         -----------------------------------------------------> Incomplete
-                         -----------------------------------------------------> Incomplete                       
-}                      -----------------------------------------------------> Incomplete */
+ .fhead   svg :hover{
+  fill: black;
+}                    
 
 
 
@@ -308,7 +300,9 @@ nav {
   text-decoration: underline;
 }
 
-
+body {
+  overflow-x: hidden;
+}
 
 /* ---------------------------------media-query---------------------------------- */
 
@@ -320,37 +314,58 @@ nav {
     width: 50%;
     
   }
- 
+  .foot .cont li {
+    font-size: 5px;
+    }  
+    #home .heading {
+      font-size: 10px;
+      padding: 0px;
+      text-align: center;
+      height: auto
+      
+    }
+    #home .photo img{
+
+      margin-top: 50px;
+    
+       height: 400px;
+       max-width: 100%;
+       padding-bottom: -50px;
+       margin-bottom: -120px;
+     
+       
+     }
 }
 
-@media screen and (max-width : 800px){
+@media screen and (max-width : 767px){
 
   body {
- overflow-x: hidden;
- }
+    overflow-x: hidden;
+  }
   .navlinks {
    position: absolute;
-   right: 0px;
+   
+   right: 0%;
    height: 92vh;
    top: 8vh;
+   overflow-x: hidden;
    background-color: hsl(23, 37%, 11%);
   display: flex;
   flex-direction: column;
   align-items: center;
    width: 100%;
    transform: translateX(100%);
-   transition: transform 0.5s ease-in;    
+   transition: transform 0.4s ease-in;    
  }
  
  .navlinks li {
    opacity: 0;
-   /* padding-top: 10px; */
- 
-
+   text-align: center;
  }
  .navlinks li a {
    color: white;
    font-size: 15px;
+   text-align: center;
 
  }
  #vplan1 a {
@@ -372,7 +387,7 @@ nav {
  }
  #home {
    flex-direction: column-reverse;
-   height: 800px;
+   height: 400px;
  }
  #home .heading {
    font-size: 10px;
@@ -403,11 +418,11 @@ nav {
  #home .photo img {
   display: none;
  }
- #home .photo2 img {
-  display: block;
+ .photo2 img {
+  display: block; 
+  overflow-x: hidden;
   width: 100%;
   height: 100%;
-  
  }
  
 
