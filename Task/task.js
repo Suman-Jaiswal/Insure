@@ -13,7 +13,7 @@ $(document).ready(function(){
 
   }  
     }
-    if(position>803){
+    if(position>800){
        document.querySelector('#head > h1').style.animation = "slide 1s ease-in-out forwards"
        document.querySelector('#bt').style.animation ="slide2 1s ease-in-out forwards"
     }
