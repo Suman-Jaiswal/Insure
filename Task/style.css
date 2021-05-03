@@ -2,6 +2,75 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.hidden{
+  overflow: hidden;
+}
+
+.box {
+  margin: 40vh auto;
+  width: 40px;
+  height: 160px;
+  position: relative;
+  overflow: hidden;
+}
+
+.shadow {
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background-color: grey;
+  bottom: 0;
+  border-radius: 100%;
+  transform: scaleX(.8);
+  opacity: .6;
+  animation: shadowScale 1s linear infinite;
+}
+
+
+.gravity {
+  width: 40px;
+  height: 40px;
+  animation: bounce 1s cubic-bezier(0.68, 0.35, 0.29, 0.54) infinite;
+}
+
+.ball {
+  width: 40px;
+  height: 40px;
+  background-image: url('https://image.flaticon.com/icons/svg/33/33736.svg');
+  background-size: cover;
+  animation: roll .6s linear infinite;
+}
+
+@keyframes roll {
+  0% {}
+
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes bounce {
+  0% {}
+
+  50% {
+    transform: translateY(100px)
+  }
+
+  100% {}
+}
+
+@keyframes shadowScale {
+  0% {}
+
+  50% {
+    transform: scaleX(1);
+    opacity: .8;
+  }
+
+  100% {}
 }
 
 /* ----------navigation bar-------------- */
@@ -13,15 +82,22 @@ nav {
   min-height: 8vh;
   background-color: white;
   border: 1px solid rgb(209, 190, 190);
-    
+   position: sticky;
+   top: 0%; 
+   z-index: 20;
 }
-
+.logo{
+  margin-left: -80px;
+}
 .navlinks {
   display: flex;
   justify-content: space-around;
-  width: 35%;
-  margin-right: -90px;
+  width: 40%;
+  margin-right: -120px;
   
+}
+nav ul{
+  width: 80%;
 }
 
 .navlinks li {
@@ -73,9 +149,13 @@ nav {
 #home{
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-   background-color:  hsl(270, 9%, 17%);
+  background: center url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1932&q=80');
+  background-size: cover;
+  object-fit: cover;
+  height: 90vh;
+  background-attachment: fixed;
   
 }
  .photo2 img {
@@ -85,42 +165,49 @@ nav {
 #home .heading{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
   
 }
 #home .photo img{
-
- margin-top: 50px;
+ position: absolute;
+ top: 100px;
   padding-top: 0px;
   height: 450px;
   max-width: 100%;
   padding-bottom: -50px;
-  margin-bottom: -120px;
+ right: 20px;
 
   
 }
 .heading h1 {
   font-family: 'DM Serif Display', serif;
-  font-size: 50px;
-  color: white;
+  font-size: 100px;
+  color: black;
   font-weight: lighter;
 }
 .heading p {
   font-family: 'DM Serif Display', serif;
   font-family: 'Karla', sans-serif;
-  color: white;
+  color: black;
   padding-top: 10px;
   padding-bottom: 20px;
+  font-weight: bold;
 }
 .heading .btn {
   font-family: 'DM Serif Display', serif;
   font-family: 'Karla', sans-serif;
   font-weight:400;
-  width: 20%;
+  width: 100%;
   padding: 5px 15px;
   color: white;
   border: 1px solid rgb(252, 250, 250);
   background-color: hsl(270, 9%, 17%);
   cursor: pointer;
+  height: 50px;
+  font-size: 20px;
+  width: 200px;
 }
 
 .heading .btn:hover {
@@ -151,7 +238,7 @@ nav {
 }
 .b1 h1 {
   text-align: center;
-  width: 40%;
+  width: 41.5%;
 }
 
   .b2  {
@@ -162,14 +249,21 @@ nav {
    padding-top: 50px;
    padding-bottom: 50px;
   }
-
+  
   .b2 .c {
-  width: 20%;
-  justify-content: space-evenly;
-  padding: 23px;
+    width: 20.5%;
+    justify-content: space-evenly;
+    padding: 23px;
+    /* animation: rot 1s linear forwards */
   }
  .b2 .c img {
   padding: 3px;
+ 
+}
+@keyframes rot {
+  100%{
+    transform: rotate(360deg);
+  }
 }
 .b2 .c  .bold {
   padding: 10px 0px;
@@ -191,7 +285,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   background-color:  hsl(270, 9%, 17%);
-  width: 80%;
+  width: 78%;
   margin: auto;
 
   
@@ -203,12 +297,34 @@ nav {
   color: white;
   font-weight: lighter;
   padding: 20px;
+  opacity: 0;
+ 
+}
+@keyframes slide {
+  from{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 .container .bt {
   align-self: center;
    background-color:  hsl(270, 9%, 17%);
-  
+   opacity: 0;
 
+}
+@keyframes slide2 {
+  from{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 .container button {
   border: 2px solid rgb(252, 249, 249);
@@ -346,13 +462,16 @@ body {
     overflow-inline: hidden;
    
   }
+  .logo{
+    margin-left: -40px;
+  }
 
     .navlinks {
    position: absolute;
-   overflow-x: hidden;
+   
    right: 0%;
    left: 0%;
-   height: 100%;
+   height: 100vh;
    top: 8vh;
    background-color: hsl(23, 37%, 11%);
    display: none;
@@ -360,7 +479,7 @@ body {
    width: 100%;
     transform: translatey(100%); 
     transition: transform 0.4s ease-in;  
-    overflow-x: hidden;  
+   
     
  }  
  .nav-active {
@@ -388,6 +507,7 @@ body {
  }
  .burger {
    display: block;
+   margin-right: -30px;
  }
 
 
@@ -422,7 +542,7 @@ body {
  #home .btn {
    font-size: 10px;
    padding: 15px;
-   width: 60%;
+   width: 100%;
   align-self: center;
   font-size: 15px;
    
